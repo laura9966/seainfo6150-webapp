@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ArticleListItem from "../ArticleListItem/ArticleListItem";
+import ArticleListItem from "../ArticleListItem/ArticleListItem.jsx";
+import styles from "./ArticleList.module.css"
 
 const ArticleList = (props) => {
     let displayContent;
@@ -19,7 +20,7 @@ const ArticleList = (props) => {
     }
 
     return (
-      <div>
+      <div className = {styles.listStyle}>
           {displayContent}
       </div>
     );
