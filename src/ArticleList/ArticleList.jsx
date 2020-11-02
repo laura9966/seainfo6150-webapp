@@ -7,20 +7,18 @@ const ArticleList = (props) => {
     let displayContent;
     if (props.articles.length) {
       displayContent = (
-        <ul>
+      <div className = {styles.listStyle}>
           {props.articles.map(article => (
-            <li key={article.slug}>
-              <ArticleListItem article={article}/>
-            </li>
+              <ArticleListItem article={article} key={article.slug}/>
           ))}
-        </ul>
+        </div>
       );
     } else {
       displayContent = <div>"You have no data!"</div>
     }
 
     return (
-      <div className = {styles.listStyle}>
+      <div className = {styles.container}>
           {displayContent}
       </div>
     );
