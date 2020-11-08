@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from 'react';
 import AddingMachineHooks from "./AddingMachineHooks";
 import { fireEvent } from "@testing-library/react";
 

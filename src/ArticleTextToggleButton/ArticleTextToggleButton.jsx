@@ -9,7 +9,9 @@ const ArticleTextToggleButton = (props) => {
     };
 
     return (
+       <div className ={styles.box}>
         <button className={styles.button} onClick={handleClick}>{props.buttonText}</button>
+        </div>
     );
 };
 

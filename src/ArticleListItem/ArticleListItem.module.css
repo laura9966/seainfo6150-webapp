@@ -25,3 +25,34 @@
 .time {
     font-weight: bold;
 }
+
+
+@media screen and (max-width: 600px) {
+    .title {
+        text-align: center;
+        font-size: 10px;
+    }
+    .text {
+        text-align: center;
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+        .title {
+            font-size: 15px;
+        }
+        .text {
+            font-size: 10px;
+     }
+
+    }
+@media screen and (min-width: 1000px) {
+        .title {
+            font-size: 20px;
+        }
+        .text {
+            font-size: 12px;
+        }
+    }

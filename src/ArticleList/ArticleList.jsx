@@ -7,7 +7,7 @@ const ArticleList = (props) => {
     let displayContent;
     if (props.articles.length) {
       displayContent = (
-      <div className = {styles.listStyle}>
+      <div className = {styles.container}>
           {props.articles.map(article => (
               <ArticleListItem article={article} key={article.slug}/>
           ))}
