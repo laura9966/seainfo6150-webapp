@@ -1,29 +1,40 @@
 .container {
-    background-color: grey;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 20px;
-    box-shadow: red 0px 0px 10px;
+  background-color: grey;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: red 0px 0px 10px;
 
 }
-@supports (display: grid) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
+.listStyle {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+ul{
+  padding: 0px 0px 0px 0px;
+}
+li {
+  list-style-type: none;
+}
 
-  @media screen and (min-width: 700px) {
-    .container {
-        gap: 10px;
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media screen and (max-width: 600px) {
+  .listStyle {
+      gap: 5px;
+      grid-template-columns: repeat(1, 1fr);
   }
+}
 
-  @media screen and (min-width: 1000px) {
-    .container {
-        gap: 20px;
-        grid-template-columns: repeat(3, 1fr);
-    }
+@media screen and (min-width: 600px) {
+  .listStyle {
+      gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .listStyle {
+      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
   }
 }
